@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DT340A - Web Technologies - Final Exam</title>
+
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>-->
+
+    <script type="text/javascript" src="start_button.js"></script>
+    <script type="text/javascript" src="timer.js"></script>
+    <script type="text/javascript" src="hint.js"></script>
+    <script type="text/javascript" src="cookie.js"></script>
+    <script type="text/javascript" src="MyCookieFunctions.js"></script>
+    <script type="text/javascript" src="record.js"></script>
+    <script type="text/javascript" src="ck.js"></script>
+
+</head>
+<body>
+
+<div id="timerDiv">
+    <label id="timerLabel">Timer: 0</label>
+</div>
+
+<div id="scoreDiv">
+    <label id="scoreLabel">Score: 0</label>
+</div>
+
+
+<div id="startButtonDiv">
+<input id="startButton" type="button" value="Start" onclick="loadGrid(); timer(); loadColorButtonValue(); hideStartButton()">
+</div>
+
+<div id="colourButtonDiv">
+    <input id="colourButton" type="button" value="Colour" onclick="hint()">
+</div>
+
+<span id="gridSpan">
+
+</span>
+
+
+
+
+</body>
+</html>
